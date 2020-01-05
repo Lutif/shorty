@@ -2,17 +2,83 @@
 
 --Cyan: hsl(180, 66%, 49%);
 --Dark-Violet: hsl(257, 27%, 26%);
-
-
---Red: hsl(0, 87%, 67%)
-
-
---Gray: hsl(0, 0%, 75%)
---Grayish-Violet: hsl(257, 7%, 63%)
---Very-Dark-Blue: hsl(255, 11%, 22%)
---Very-Dark-Violet: hsl(260, 8%, 14%)
+--Red: hsl(0, 87%, 67%);
+--Gray: hsl(0, 0%, 75%);
+--Grayish-Violet: hsl(257, 7%, 63%);
+--Very-Dark-Blue: hsl(255, 11%, 22%);
+--Very-Dark-Violet: hsl(260, 8%, 14%);
 
 }
 body{
-    background-color: var(--Cyan)
+    background-color: smokewhite;
+    flex-wrap: wrap;
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.cyan{
+    background-color: var(--Cyan);
+color:white;
+
+}
+
+
+
+/* navbar section */
+.navbar{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+.subnav{
+    list-style: none;
+    display:flex;
+}
+.navitem{
+    margin: 0 10px;
+}
+
+
+
+
+/* main content area */
+
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.main{
+    justify-items: flex-end;
+}
+.main .content{
+    display:flex;
+    flex-direction:column;
+    width:40vw;
+
+}
+.main-image{
+    width:40vw;
+    height: auto;
+
+    
+}
+
+
+button{
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    max-width: 100px;
+}
+
+.heading{
+    font-weight: bold;
+    font-size:1.2rem;
 }
