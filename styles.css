@@ -62,6 +62,8 @@ color:white;
     align-items: center;
     padding-left: 10vw;
     padding-top: 10vh;
+    text-align: center;
+    justify-content: flex-end;
 }
 
 .main .content{
@@ -79,13 +81,14 @@ color:white;
 .main-image{
     width:40vw;
     height: auto;
+    align-self: flex-end;
 
     
 }
 
 /* form area */
 .container{
-    background:linear-gradient(0deg,var(--Grayish-Violet) 100px, white 100px);
+    background:linear-gradient(0deg,var(--Gray) 100px, white 100px);
     
 }
 .form{
@@ -123,7 +126,8 @@ float: right;
 /* statistics-section */
 .statistics-section{
     padding-top: 20vh;
-    background-color:var(--Grayish-Violet);
+    background-color:var(--Gray);
+z-index: -1;
 }
 
 .statistics-section .heading{
@@ -136,28 +140,51 @@ text-align:center;
     text-align: center;
 }
 
+.style-line{
+    border: 3px solid var(--Cyan);
+position: relative;
+top: 210px;
+width: 40vw;
+left: 30vw;
+z-index: 1;
+}
+
 .cards{
+    
     display: flex;
     margin: 10vh 10vw 0 10vw;
+
 }
 
 
 .card{
     width: 33%;
-    padding:20px;
+    margin:20px;
+    padding: 0 20px 10px 20px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    z-index: 4;
 }
 
 .image {
-
+    width: fit-content;
     background-color:var(--Dark-Violet);
-
-    border-radius: 50% 50% 0 50% ;
     border:none;
-    padding: 5px;
+    padding: 20px;
+    transform: translateY(-20px);
+    border-radius: 50%
 }
 .sub-heading{
     font-size:1.4rem;
     margin-bottom: 10px;
+}
+
+.sub-heading::after{
+    content: "\A";
+    display: block;
+    border: 1px solid grey;
+
+
 }
 
 
@@ -170,9 +197,31 @@ Footer{
     display: flex;
 }
 
+.callofaction{
+    height: 30vh;
+    background-image: url("./images/bg-boost-desktop.svg");
+    background-color:var(--Dark-Violet);
+text-align: center;
+padding: 10vh;
+box-sizing: border-box;
+color: #fff;
+}
+
+Footer{
+    display: flex;
+    background-color:var(--Very-Dark-Blue);
+    padding:5vw;
+    justify-content: space-between;
+}
+
 Footer li {
+    align-self: flex-start;
 list-style: none;
 }
+
+
+
+
 
 button{
     padding: 10px 15px;
@@ -187,6 +236,7 @@ button:hover{
     cursor: pointer;
 }
 .heading{
+    font-size: 1.4rem;
     font-weight: bold;
 
 
