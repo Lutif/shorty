@@ -190,12 +190,6 @@ z-index: 1;
 
 /* footer */
 
-Footer{
-    display: flex;
-}
-.externals{
-    display: flex;
-}
 
 .callofaction{
     height: 30vh;
@@ -210,17 +204,35 @@ color: #fff;
 Footer{
     display: flex;
     background-color:var(--Very-Dark-Blue);
-    padding:5vw;
+    padding:2vw;
     justify-content: space-between;
 }
+.externals{
+    display: flex;
+}
+.features ul {
+    list-style: none;
+}
 
-Footer li {
+.features li {
     align-self: flex-start;
 list-style: none;
 }
-
-
-
+.social-meida{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10px;
+}
+.icon{
+    color: white;
+    display:block;
+    padding-top: 8px;
+    padding-left: 8px;
+}
+.icon:hover{
+    color: var(--Cyan);
+    transform :scale(1.1);
+}
 
 
 button{
