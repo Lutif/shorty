@@ -88,7 +88,7 @@ color:white;
 
 /* form area */
 .container{
-    background:linear-gradient(0deg,var(--Gray) 100px, white 100px);
+    background:linear-gradient(0deg,var(--Gray) 80% , white 100px);
     
 }
 .form{
@@ -110,18 +110,22 @@ color:white;
     
 }
 .link{
-    background:white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background:#f5f2f2;
     padding: 5px 20px;
     border-radius:5px;
+    margin-bottom: 10px;
 }
 .original{
 text-decoration: none;
 color:  black;
+overflow: hidden;
 }
 .shorten{
     color: var(--Cyan);
     text-decoration: none;
-float: right;
 }
 /* statistics-section */
 .statistics-section{
@@ -152,20 +156,27 @@ z-index: 1;
 .cards{
     
     display: flex;
-    margin: 10vh 10vw 0 10vw;
+    padding: 10vh 10vw 10vh 10vw;
 
 }
 
 
 .card{
     width: 33%;
+    height: 80%;
     margin:20px;
-    padding: 0 20px 10px 20px;
+    padding: 0 20px 20px 20px;
     border-radius: 10px;
     background-color: aliceblue;
     z-index: 4;
+    border-radius:  0 50px 0 50px;
 }
-
+.records{
+    margin-top: 50px;
+}
+.customizable{
+    margin-top:100px;
+}
 .image {
     width: fit-content;
     background-color:var(--Dark-Violet);
