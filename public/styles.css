@@ -20,19 +20,6 @@ body{
 }
 
 
-.cyan{
-    background-color: var(--Cyan);
-color:white;
-
-}
-.logo{
-    font-size:1.4rem;
-    font-weight: bolder;
-
-}
-.body-text{
-    color: var(--Very-Dark-Violet);
-}
 
 /* navbar section */
 .navbar{
@@ -97,6 +84,7 @@ color:white;
     margin:5vh 10vw;
     padding: 5vh 5vw;
     border-radius: 10px;
+    box-shadow: 2px 2px 5px var(--Cyan);
 }
 .form input{
     font-size:1.4rem;
@@ -104,6 +92,7 @@ color:white;
     margin-right: 30px;
     padding: 5px;
     border-radius: 10px;
+    box-shadow: 2px 2px 5px var(--Cyan);
 }
 .history{
     margin:0 10vw;
@@ -161,9 +150,10 @@ z-index: 1;
     width: 33%;
     margin:20px;
     padding: 0 20px 10px 20px;
-    border-radius: 10px;
+    border-radius:  0 20% 0 10%;
     background-color: aliceblue;
     z-index: 4;
+    box-shadow: 2px 2px 3px var(--Dark-Violet);
 }
 
 .image {
@@ -171,7 +161,7 @@ z-index: 1;
     background-color:var(--Dark-Violet);
     border:none;
     padding: 20px;
-    transform: translateY(-20px);
+    transform: translateY(-30px) translateX(-30px);
     border-radius: 50%
 }
 .sub-heading{
@@ -241,15 +231,34 @@ button{
     border: none;
     max-width: 100px;
     margin: 10px 0;
+    box-shadow: 2px 2px 5px var(--Gray);
 }
 
 button:hover{
     transform: scale(1.1);
     cursor: pointer;
+    
 }
 .heading{
     font-size: 1.4rem;
     font-weight: bold;
 
 
+}
+ 
+.cyan{
+    background-color: var(--Cyan);
+color:white;
+
+}
+.logo{
+    font-size:2rem;
+    font-family:  Helvetica,Arial, sans-serif;
+    font-weight: bolder;
+    color:var(--Cyan);
+    text-shadow:3px 3px 5px var(--Dark-Violet);
+
+}
+.body-text{
+    color: var(--Very-Dark-Violet);
 }

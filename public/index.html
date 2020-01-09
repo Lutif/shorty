@@ -49,9 +49,10 @@
 
   </div>
 <div class="container">
-  <div class="form">
-    <input type="text" placeholder="Shorten a link here..."/> <button class="cyan"> Shorten It!</button> 
-  </div>
+  <form class="form" >
+    <input class ='input-link' type="text" name='url' placeholder="Shorten a link here..."/> 
+    <button onclick= "convert(e)" class="cyan"  > Shorten It!</button> 
+  </form>
     <div class="history">
       <div class="link">
         <a class="original" href='https://frontendmentor.io'>https://frontendmentor.io</a> <a class="shorten" href='' >shorten</a>
@@ -144,5 +145,6 @@
     Coded by <a href="#">Lutif</a>.
   </div>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
