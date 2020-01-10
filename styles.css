@@ -1,0 +1,266 @@
+:root{
+
+--Cyan: hsl(180, 66%, 49%);
+--Dark-Violet: hsl(257, 27%, 26%);
+--Red: hsl(0, 87%, 67%);
+--Gray: hsl(0, 0%, 75%);
+--Grayish-Violet: hsl(257, 7%, 63%);
+--Very-Dark-Blue: hsl(255, 11%, 22%);
+--Very-Dark-Violet: hsl(260, 8%, 14%);
+
+}
+body{
+    line-height: 1.5;
+    background-color: smokewhite;
+    flex-wrap: wrap;
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.cyan{
+    background-color: var(--Cyan);
+color:white;
+
+}
+.logo{
+    font-size:1.4rem;
+    font-weight: bolder;
+
+}
+.body-text{
+    color: var(--Very-Dark-Violet);
+}
+
+/* navbar section */
+.navbar{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+.subnav{
+    list-style: none;
+    display:flex;
+}
+.navitem{
+    margin: 0 10px;
+}
+
+
+
+
+/* main content area */
+
+.main{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 10vw;
+    padding-top: 10vh;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+.main .content{
+    display:flex;
+    flex-direction:column;
+    width:40vw;
+    padding:10px 30px 0 0;
+
+}
+
+.content .heading{
+    font-size:2.5rem;
+    padding-right: 20px;
+}
+.main-image{
+    width:40vw;
+    height: auto;
+    align-self: flex-end;
+
+    
+}
+
+/* form area */
+.container{
+    background:linear-gradient(0deg,var(--Gray) 80% , white 100px);
+    
+}
+.form{
+    background: url("images/bg-shorten-desktop.svg");
+    background-color: var(--Dark-Violet);
+    margin:5vh 10vw;
+    padding: 5vh 5vw;
+    border-radius: 10px;
+}
+.form input{
+    font-size:1.4rem;
+    width: 50vw;
+    margin-right: 30px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.history{
+    margin:0 10vw;
+    
+}
+.link{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background:#f5f2f2;
+    padding: 5px 20px;
+    border-radius:5px;
+    margin-bottom: 10px;
+}
+.original{
+text-decoration: none;
+color:  black;
+overflow: hidden;
+}
+.shorten{
+    color: var(--Cyan);
+    text-decoration: none;
+}
+/* statistics-section */
+.statistics-section{
+    padding-top: 20vh;
+    background-color:var(--Gray);
+z-index: -1;
+}
+
+.statistics-section .heading{
+font-size:1.8rem;
+text-align:center;
+}
+
+.statistics-section>.body-text{
+    padding: 20px 30vw;
+    text-align: center;
+}
+
+.style-line{
+    border: 3px solid var(--Cyan);
+position: relative;
+top: 210px;
+width: 40vw;
+left: 30vw;
+z-index: 1;
+}
+
+.cards{
+    
+    display: flex;
+    padding: 10vh 10vw 10vh 10vw;
+
+}
+
+
+.card{
+    width: 33%;
+    height: 80%;
+    margin:20px;
+    padding: 0 20px 20px 20px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    z-index: 4;
+    border-radius:  0 50px 0 50px;
+}
+.records{
+    margin-top: 50px;
+}
+.customizable{
+    margin-top:100px;
+}
+.image {
+    width: fit-content;
+    background-color:var(--Dark-Violet);
+    border:none;
+    padding: 20px;
+    transform: translateY(-20px);
+    border-radius: 50%
+}
+.sub-heading{
+    font-size:1.4rem;
+    margin-bottom: 10px;
+}
+
+.sub-heading::after{
+    content: "\A";
+    display: block;
+    border: 1px solid grey;
+
+
+}
+
+
+/* footer */
+
+
+.callofaction{
+    height: 30vh;
+    background-image: url("./images/bg-boost-desktop.svg");
+    background-color:var(--Dark-Violet);
+text-align: center;
+padding: 10vh;
+box-sizing: border-box;
+color: #fff;
+}
+
+Footer{
+    display: flex;
+    background-color:var(--Very-Dark-Blue);
+    padding:2vw;
+    justify-content: space-between;
+}
+.externals{
+    display: flex;
+}
+.features ul {
+    list-style: none;
+}
+
+.features li {
+    align-self: flex-start;
+list-style: none;
+}
+.social-meida{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10px;
+}
+.icon{
+    color: white;
+    display:block;
+    padding-top: 8px;
+    padding-left: 8px;
+}
+.icon:hover{
+    color: var(--Cyan);
+    transform :scale(1.1);
+}
+
+
+button{
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    max-width: 100px;
+    margin: 10px 0;
+}
+
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.heading{
+    font-size: 1.4rem;
+    font-weight: bold;
+
+
+}

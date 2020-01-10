@@ -22,7 +22,6 @@ function convert() {
     const request = new XMLHttpRequest();
     // console.log(request);
     request.onreadystatechange = function () {
-        // console.log('readyState: ' ,this.readyState, ' status code :' , this.status)
         if (this.readyState == 4 && this.status == 201)
         {
             console.log('response is: '+this.responseText);
@@ -33,4 +32,3 @@ function convert() {
     request.open('POST', relink, true);
     request.setRequestHeader('Content-Type', 'application/json');
     request.send(payload);
-}
