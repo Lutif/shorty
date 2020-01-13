@@ -27,6 +27,8 @@ function convert() {
             console.log('response is: '+this.responseText);
             const shorten = JSON.parse(this.responseText).hashid;
         document.querySelector('.shorten').innerHTML ='https://rel.ink/'+shorten;
+        } else {
+            alert('Error occured , status code :' + this.status);
         }
     }
     request.open('POST', relink, true);
